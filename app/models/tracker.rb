@@ -32,7 +32,7 @@ class Tracker < ActiveRecord::Base
       }
       @recent_tracks << track_info
     end
-    return @recent_tracks
+    return @recent_tracks[0..9]
   end
 
 end
