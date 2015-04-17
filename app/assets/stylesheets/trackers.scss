@@ -1,0 +1,87 @@
+// Place all the styles related to the Trackers controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$header-fonts: 'Lobster', cursive;
+$font-stack: 'Open Sans', Helvetica, sans-serif;
+$trim-color: rgba(224, 100, 30, 1);
+$base-color: rgba(14, 20, 66, 1);
+
+/* 
+  Color Scheme
+  ––––––––––––
+  black: #000
+  orange: rgb(224, 100, 30)
+  blue: rgb(24, 33, 110)
+  
+*/
+
+body{
+  font-family: $font-stack;
+  width: 100%;
+  margin: 0;
+  background-color: #222;
+  color: #fff;
+}
+
+header{
+  font-family: $header-fonts;
+  text-align: center;
+  width: 100%; 
+  font-size: 2em;
+}
+
+.category-heading{
+  text-align: center;
+}
+
+.music{
+  display: inline-block;
+  border: $trim-color 4px solid;
+  border-radius: 5px;
+  background-color: $base-color;
+  width: 12em;
+  padding: 1em; 
+  margin: 1.5em;
+  text-align: center;
+
+  img{
+    width: 10em;
+  }
+
+  a,
+  a:visited{
+    text-decoration: none;
+    color: #fff;
+    font-family: $font-stack;
+  }
+
+  a:hover{
+    color: $trim-color;
+  }
+
+}
+
+p strong{
+  color: $trim-color;
+}
+
+.last-fm{
+  color: #d01f3c;
+}
+
+footer{
+  text-align: right;
+  padding: 0 2em 2em 0;
+  font-family: $header-fonts;
+  a, 
+  a:visited{
+    // font-family: $header-fonts;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  a:hover{
+    color: $trim-color;
+  }
+}

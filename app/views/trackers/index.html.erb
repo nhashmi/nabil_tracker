@@ -1,0 +1,15 @@
+<div class="category-heading">
+<h2>Web Development</h2>
+<p>Yesterday, I spent <strong><%= @hours %> hours &amp; <%= @minutes %> minutes </strong>on web development.</p>
+</div>
+<div class="category-heading">
+<h2><span class="last-fm">last.fm</span> listens</h2>
+<p>Here's a snapshot of the ten tracks I've listened to most recently:</p>
+</div>
+<% @music.each do |track| %> 
+  <div class="music"><a href="<%= track[:url] %>">
+    <p><%= "#{track[:artist]}"%></p>
+    <img src="<%= track[:image] %>" alt="Album art for <%= track[:artist] %>">
+    <p><%= "\"#{track[:name]}\"" %></p>
+  </a></div>
+<% end %> 

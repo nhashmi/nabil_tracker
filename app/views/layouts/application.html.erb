@@ -1,14 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>TrackNabil</title>
+  <title>Nabil Tracker</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-<%= yield %>
+<header>
+<h1>Nabil Hashmi</h1>
+</header>
+
+<main>
+  <%= yield %>
+</main>
+
+
+<footer>&copy; 2015 <a href="http://www.github.com/nhashmi">Nabil Hashmi</a></footer>
 
 </body>
 </html>
