@@ -17,3 +17,6 @@
 
 # Ignore to-do list
 /to_do.md
+
+/.DS_Store
+/app/.DS_Store
